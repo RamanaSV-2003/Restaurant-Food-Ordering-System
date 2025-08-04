@@ -44,10 +44,7 @@ cd Restaurant-Food-Ordering-System
 
 # Install dependencies
 npm install
-
-# Run the app locally
 npm run dev
-Access the app at: http://localhost:5173
 
 Build for Production
 bash
@@ -55,32 +52,6 @@ Copy
 Edit
 npm run build
 npm run preview
-📁 Project Structure
-csharp
-Copy
-Edit
-src/
-├── components/       # UI Components (Menu, Cart, Profile, etc.)
-├── App.tsx           # Root component
-├── main.tsx          # Entry point
-├── index.css         # Global styles
-public/
-├── image.png         # Logo
-└── index.html        # HTML template
-🏪 Restaurant Info
-📍 Location: Jammalamadugu, Kadapa, Andhra Pradesh
-
-📞 Contact: +91-9874563210
-
-🕐 Timings: 11:00 AM – 10:00 PM
-
-🚚 Delivery: Free over ₹500, within 10km
-
-📄 License
-This project is licensed under the MIT License.
-
-🙏 Acknowledgments
-Local chefs and staff for authentic recipes
 
 Open source tools (React, Tailwind, Vite)
 
