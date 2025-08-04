@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Restaurant Logo Watermark */
+body::before {
+  content: '';
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background-image: url('/image.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.03;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Page Border with Logo Pattern */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 8px solid transparent;
+  border-image: linear-gradient(45deg, 
+    rgba(97, 220, 119, 0.1) 0%, 
+    rgba(234, 88, 12, 0.1) 25%, 
+    rgba(245, 158, 11, 0.1) 50%, 
+    rgba(234, 88, 12, 0.1) 75%, 
+    rgba(245, 158, 11, 0.1) 100%
+  ) 1;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Menu Card Watermark */
+.menu-card {
+  position: relative;
+}
+
+.menu-card::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-image: url('/image.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Header Watermark */
+.header-watermark {
+  position: relative;
+}
+
+.header-watermark::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/image.png');
+  background-size: 100px 100px;
+  background-repeat: repeat;
+  background-position: center;
+  opacity: 0.02;
+  z-index: -1;
+  pointer-events: none;
+}
